@@ -1,0 +1,37 @@
+ext {
+
+    kotlinVersion = '1.3.21'
+
+    buildTools = '3.5.0-beta05'
+
+    //Rx
+    rxJavaVersion = '2.2.7'
+    rxKotlinVersion = '2.2.0'
+    rxAndroidVersion = '2.1.1'
+
+    //Koin
+    koinVersion = '1.0.2'
+
+    //Android
+    appCompat = '1.0.2'
+
+    //Tests
+    junitVersion = '4.12'
+    expressoVersion = '3.1.0'
+
+    //Google
+    servicesVersion = '4.3.0'
+    firebaseCoreVersion = '17.0.0'
+
+    dependencies = [
+            kotlin: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion",
+            rxJava: "io.reactivex.rxjava2:rxjava:$rxJavaVersion",
+            rxKotlin: "io.reactivex.rxjava2:rxkotlin:$rxKotlinVersion",
+            rxAndroid: "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion",
+            koin: "org.koin:koin-android:$koinVersion",
+            appCompat: "androidx.appcompat:appcompat:$appCompat",
+            firebaseCore: "com.google.firebase:firebase-core:$firebaseCoreVersion",
+            junit: "junit:junit:$junitVersion",
+            expresso: "androidx.test.espresso:espresso-core:$expressoVersion"
+    ]
+}
