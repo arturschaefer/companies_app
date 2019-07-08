@@ -29,3 +29,5 @@ dependencies {
     testImplementation dependencies.junit
     implementation dependencies.firebaseCore
 }
+
+apply plugin: 'com.google.gms.google-services'
