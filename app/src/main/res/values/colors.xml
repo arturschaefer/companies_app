@@ -8,5 +8,6 @@
     <color name="medium_pink">#ee4c77</color>
     <color name="night_blue">#0d0430</color>
     <color name="black_opacity">#3B000000</color>
+    <color name="warm_grey">#8d8c8c</color>
     <color name="beige">#ebe9d7</color>
 </resources>
