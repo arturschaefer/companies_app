@@ -4,17 +4,20 @@ import com.schaefer.companiesapp.entity.enterprise.Enterprises
 import com.schaefer.companiesapp.entity.login.LoginEntity
 import com.schaefer.companiesapp.entity.login.LoginResultEntity
 import io.reactivex.Observable
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.POST
-import retrofit2.http.Query
+import retrofit2.Response
+import retrofit2.http.*
 
 interface CompaniesService {
     @POST("users/auth/sign_in")
-    fun signIn(@Body loginBody: LoginEntity): Observable<LoginResultEntity>
+    fun signIn(@Body loginBody: LoginEntity): Observable<Response<LoginResultEntity>>
 
     @GET("enterprises")
-    fun searchEnterprises(@Query("name") name: String?): Observable<Enterprises>
+    fun searchEnterprises(
+        @Header("access-token") accessToken: String,
+        @Header("client") client: String,
+        @Header("uid") uid: String,
+        @Query("name") name: String?
+    ): Observable<Enterprises>
 
     /*@GET("enterprises/{id}")
     fun showAsync(@Path("id") id: Int): Deferred<EnterpriseShowResponse>*/
