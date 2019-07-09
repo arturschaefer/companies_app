@@ -5,11 +5,11 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import com.orhanobut.logger.Logger
 import com.schaefer.companiesapp.R
 import com.schaefer.companiesapp.entity.utils.Utils.enableButton
 import com.schaefer.companiesapp.presenter.LoginPresenter
+import com.schaefer.companiesapp.view.utils.Utils.Companion.changeColorStatusBar
 import com.schaefer.companiesapp.view.utils.loginActivityComponent
 import kotlinx.android.synthetic.main.activity_login.*
 import javax.inject.Inject
@@ -26,8 +26,7 @@ class LoginActivity : AppCompatActivity() {
 
         enableButton(false, button_sign_in)
 
-        window?.statusBarColor =
-            ContextCompat.getColor(this, R.color.black_opacity)
+        changeColorStatusBar(window, this, R.color.black_opacity)
 
         button_sign_in.setOnClickListener {
             Logger.d("test")

@@ -1,8 +1,11 @@
 package com.schaefer.companiesapp.entity.utils
 
+import android.content.Context
 import android.text.TextUtils
 import android.util.Patterns
 import android.view.View
+import android.view.Window
+import androidx.core.content.ContextCompat
 
 
 object Utils {
@@ -19,5 +22,11 @@ object Utils {
         } else {
             view.alpha = 0.3f
         }
+    }
+
+    @JvmStatic
+    fun changeColorStatusBar(window: Window, context: Context, color: Int) {
+        window.statusBarColor =
+            ContextCompat.getColor(context, color)
     }
 }
