@@ -7,9 +7,9 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.orhanobut.logger.Logger
 import com.schaefer.companiesapp.R
+import com.schaefer.companiesapp.entity.utils.Utils.changeColorStatusBar
 import com.schaefer.companiesapp.entity.utils.Utils.enableButton
 import com.schaefer.companiesapp.presenter.LoginPresenter
-import com.schaefer.companiesapp.view.utils.Utils.Companion.changeColorStatusBar
 import com.schaefer.companiesapp.view.utils.loginActivityComponent
 import kotlinx.android.synthetic.main.activity_login.*
 import javax.inject.Inject
