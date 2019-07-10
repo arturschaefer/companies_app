@@ -12,12 +12,12 @@ interface CompaniesService {
     fun signIn(@Body loginBody: LoginEntity): Observable<Response<LoginResultEntity>>
 
     @GET("enterprises")
-    fun searchEnterprises(
-        @Header("access-token") accessToken: String,
-        @Header("client") client: String,
-        @Header("uid") uid: String,
+    fun getEnterprisesByName(
+        @Header("access-token") accessToken: String?,
+        @Header("client") client: String?,
+        @Header("uid") uid: String?,
         @Query("name") name: String?
-    ): Observable<Enterprises>
+    ): Observable<Response<Enterprises>>
 
     /*@GET("enterprises/{id}")
     fun showAsync(@Path("id") id: Int): Deferred<EnterpriseShowResponse>*/
