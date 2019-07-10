@@ -7,12 +7,12 @@ import com.schaefer.companiesapp.entity.portfolio.PortfolioEntity
 
 data class InvestorEntity(
     @SerializedName("id") val id: Int,
-    @SerializedName("investor_name") val investor_name: String,
-    @SerializedName("email") val email: String,
-    @SerializedName("city") val city: String,
-    @SerializedName("country") val country: String,
+    @SerializedName("investor_name") val investor_name: String?,
+    @SerializedName("email") val email: String?,
+    @SerializedName("city") val city: String?,
+    @SerializedName("country") val country: String?,
     @SerializedName("balance") val balance: Int,
-    @SerializedName("photo") val photo: String,
+    @SerializedName("photo") val photo: String?,
     @SerializedName("portfolio") val portfolio: PortfolioEntity,
     @SerializedName("portfolio_value") val portfolio_value: Int,
     @SerializedName("first_access") val first_access: Boolean,
