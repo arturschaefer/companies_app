@@ -9,4 +9,5 @@
     <string name="hint_password">Senha</string>
     <string name="action_sign_in">Entrar</string>
     <string name="msg_description_lorem">Lorem ipsum dolor sit amet, contetur  adipiscing elit. Nunc accumsan.</string>
+    <string name="msg_click_to_continue">Clique na busca para iniciar.</string>
 </resources>

@@ -3,14 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/linearLayout_home"
     android:orientation="vertical">
 
-    <include layout="@layout/layout_logo_toolbar" />
+    <include layout="@layout/layout_toolbar_logo" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_search"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:nestedScrollingEnabled="false"
         android:visibility="gone"
         tools:listitem="@layout/item_search" />
 
@@ -23,7 +26,7 @@
         android:gravity="center"
         android:letterSpacing="-0.01"
         android:lineSpacingExtra="2.3sp"
-        android:text="Clique na busca para iniciar."
+        android:text="@string/msg_click_to_continue"
         android:textAlignment="center"
         android:textColor="@color/charcoal_grey"
         android:textSize="14sp"
