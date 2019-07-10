@@ -8,7 +8,7 @@ import com.schaefer.companiesapp.entity.investor.InvestorEntity
 
 data class LoginResultEntity(
     @SerializedName("investor") val investor: InvestorEntity,
-    @SerializedName("enterprise") val enterprise: String,
+    @SerializedName("enterprise") val enterprise: String?,
     @SerializedName("success") val success: Boolean,
     @SerializedName("credentials") var credentialsEntity: CredentialsEntity
 ) : Parcelable {
