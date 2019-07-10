@@ -2,4 +2,6 @@
     <string name="app_name">CompaniesApp</string>
     <string name="error_email_password">Insira o e-mail e a senha</string>
     <string name="error_wrong_credentials">Usuário/senha incorretos. Por favor, tente novamente.</string>
+    <string name="error_get_enterprises">Erro ao recuperar lista de empresas. Por favor, tente novamente.</string>
+    <string name="hint_search">Pesquisar</string>
 </resources>
